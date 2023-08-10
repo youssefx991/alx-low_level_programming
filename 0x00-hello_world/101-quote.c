@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - Entry Point
@@ -10,13 +10,10 @@
 
 int main(void)
 {
-	char line[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	char line[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	for (int i = 0; line[i] != '\0'; i++)
-	{
-		putchar(line[i]);
-	}
-	putchar('\n');
+	write(1, line, 59);
+
 	return (1);
 
 }
