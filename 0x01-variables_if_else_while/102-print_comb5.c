@@ -25,19 +25,17 @@ int main(void)
 				putchar(' ');
 				putchar((s / 10) + 48);
 				putchar((s % 10) + 48);
-			}
 
-			if (f != 98 || s != 99)
-			{
-				putchar(',');
-				putchar(' ');
+				if (f != 98 || s != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 			s++;
 		}
 		f++;
 	}
-
 	putchar('\n');
-
 	return (0);
 }
