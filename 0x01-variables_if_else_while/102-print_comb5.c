@@ -3,37 +3,40 @@
 /**
  * main - entry point
  *
- * Description: A C program to print different comp of two two-digit number
+ * Description: Print last digit of a random number
  *
  * Return: Always 0 (success)
 */
 
 int main(void)
 {
-	int i, j, k, l;
+	int f = 0, s;
 
-	for (i = 0; i <= 9; i++)
+	while (f <= 99)
 	{
-		for (j = 0; j <= 9; j++)
+		s = f;
+
+		while (s <= 99)
 		{
-			for (k = 0; k <= 9; k++)
+			if (f != s)
 			{
-				for (l = 0; l <= 9; l++)
-				{
-					putchar(i + 48);
-					putchar(j + 48);
-					putchar(' ');
-					putchar(k + 48);
-					putchar(l + 48);
-					if (i != 9 || j != 8 || k != 9 || l != 9)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
+				putchar((f / 10) + 48);
+				putchar((f % 10) + 48);
+				putchar(' ');
+				putchar((s / 10) + 48);
+				putchar((s % 10) + 48);
 			}
+
+			if (f != 98 || s != 99)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+			s++;
 		}
+		f++;
 	}
+
 	putchar('\n');
 
 	return (0);
