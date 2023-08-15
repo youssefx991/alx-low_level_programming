@@ -10,9 +10,9 @@
 
 int main(void)
 {
-	long long f = 1, s = 2, nxt, i;
+	unsigned  long f = 1, s = 2, nxt, i;
 
-	printf("%lld, %lld, ", f, s);
+	printf("%lu, %lu, ", f, s);
 
 	for (i = 3; i <= 50; i++)
 	{
@@ -20,7 +20,7 @@ int main(void)
 		f = s;
 		s = nxt;
 
-		printf("%lld",  nxt);
+		printf("%lu",  nxt);
 
 		if (i != 50)
 			printf(", ");
