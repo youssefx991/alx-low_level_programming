@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	unsigned  long f = 1, s = 2, nxt, i, sum = 0;
+	unsigned  long f = 1, s = 2, nxt, i, sum = 2;
 
 	for (i = 3; i <= 50; i++)
 	{
