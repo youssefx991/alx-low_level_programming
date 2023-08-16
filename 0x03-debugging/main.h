@@ -27,3 +27,5 @@ void print_to_98(int n);
 void print_times_table(int n);
 
 void positive_or_negative(int);
+
+int largest_number(int a, int b, int c);
