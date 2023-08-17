@@ -18,7 +18,7 @@ int main(void)
 	while (num % 3 == 0)
 		num /= 3;
 
-	for (i = 5; i <= n; i++)
+	for (i = 5; i <= n; i += 2)
 	{
 		if (num % i == 0)
 		{
