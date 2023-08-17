@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	long int i, largest = 2, curr, num = 612852475143, n = 782848;
+	long int i, largest = 2, curr = 0, num = 612852475143, n = 782848;
 
 	while (num % 2 == 0)
 		num /= 2;
