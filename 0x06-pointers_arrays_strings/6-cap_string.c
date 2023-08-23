@@ -10,9 +10,9 @@
 int isSeparator(char c)
 {
 	int i;
-	char s[] = " \t\n,;.!?\"(){}";
+	char s[] = " \t\n,.!?\"(){}";
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; i < 12; i++)
 		if (c == s[i])
 			return (1);
 	return (0);
