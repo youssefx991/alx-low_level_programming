@@ -35,7 +35,7 @@ char *cap_string(char *c)
 		if (isSeparator(c[i]) == 1)
 			sep = 1;
 
-		else if ((c[i] >= 'a' && c[i] <= 'z') && sep)
+		else if ((c[i] >= 'a' && c[i] <= 'z') && sep == 1)
 		{
 			c[i] -= 32;
 			sep = 0;
