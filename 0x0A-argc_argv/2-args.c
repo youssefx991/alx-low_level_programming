@@ -5,7 +5,7 @@
  * @argc: size of argc
  * @argv: array of arguments
  *
- * Retunr 0;
+ * Return:  0;
 */
 
 int main(int argc, char *argv[])
