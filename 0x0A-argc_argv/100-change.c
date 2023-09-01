@@ -11,12 +11,14 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc > 1)
+	if (argc == 2)
 	{
 		int amount, twentyFives, tens, fives, twos, ones;
 
-
 		amount = atoi(argv[1]);
+
+		if (amount < 0)
+			amount = 0;
 
 		twentyFives = amount / 25;
 		amount = amount % 25;
@@ -38,6 +40,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		printf("Error\n");
+		return (1);
 	}
 
 	return (0);
