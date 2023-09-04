@@ -13,10 +13,10 @@ char *_strdup(char *str)
 	int i, n;
 	char *ptr;
 
-	n = strlen(str);
+	n = strlen(str) + 1;
 	ptr = (char *)malloc(sizeof(char) * n);
 
-	if (str == NULL)
+	if (str == NULL || ptr == NULL)
 		return (NULL);
 
 
