@@ -14,6 +14,7 @@ char *set(char *ptr, char c, unsigned int n)
 
 	while (n--)
 		*ptr++ = c;
+
 	return (tmp);
 }
 
@@ -27,7 +28,6 @@ char *set(char *ptr, char c, unsigned int n)
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *ptr;
-	unsigned int n;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
@@ -37,9 +37,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (ptr == NULL)
 		return (NULL);
 
-	n = sizeof(int) * nmemb;
-
-	set(ptr, 0, n);
+	set(ptr, 0, sizeof(int) * nmemb);
 
 	return (ptr);
 }
