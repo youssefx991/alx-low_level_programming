@@ -14,10 +14,9 @@ int _strlen(char *s)
 
 	if (!s)
 		return (0);
-	while (*s)
+	while (*s++)
 	{
 		i++;
-		s++;
 	}
 
 	return (i);
@@ -31,7 +30,7 @@ int _strlen(char *s)
 */
 size_t print_list(const list_t *h)
 {
-	int i;
+	size_t i;
 
 	i = 0;
 
