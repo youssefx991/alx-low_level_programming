@@ -12,7 +12,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
 	ssize_t chars;
-	char arr[1024];
+	char arr[1024 * 8];
 
 	if (!filename || !letters)
 		return (0);
