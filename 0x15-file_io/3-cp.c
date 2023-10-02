@@ -42,7 +42,7 @@ int main(int ac, char **av)
 
 	while ((chars = read(fd_from, arr, 1024)) > 0)
 		if (write(fd_to, arr, chars) != chars)
-				dprintf(STDERR_FILENO, ERROR_99, av[2]), exit(99);
+			dprintf(STDERR_FILENO, ERROR_99, av[2]), exit(99);
 	if (chars == -1)
 		dprintf(STDERR_FILENO, ERROR_98, av[1]), exit(98);
 
